@@ -44,39 +44,39 @@ gcc -o lottery_scheduler lottery_scheduler.c
 ```
 ## Sample Interaction:
 
-Enter number of jobs: 4
-Press [1]: To see job selection per schedule  | [0]: To Skip : 1
-Press [1]: To short the Wins Statics | [0]: To Skip : 1
- Selected Job: Job_B (winning ticket # 14)
- Selected Job: Job_A (winning ticket # 6)
- ...
+-Enter number of jobs: 4
+-Press [1]: To see job selection per schedule  | [0]: To Skip : 1
+-Press [1]: To short the Wins Statics | [0]: To Skip : 1
+-Selected Job: Job_B (winning ticket # 14)
+-Selected Job: Job_A (winning ticket # 6)
+...
+-
+-==Job Wins Statics (out of 10 runs)===
+-Job_C -> Wins: 1 (10.00%)
+-Job_B -> Wins: 5 (50.00%)
+-Job_D -> Wins: 2 (20.00%)
+-Job_A -> Wins: 2 (20.00%)
+-
+-Press [Y]: To Run Again [N]: To Exit
 
-==Job Wins Statics (out of 10 runs)===
-Job_C -> Wins: 1 (10.00%)
-Job_B -> Wins: 5 (50.00%)
-Job_D -> Wins: 2 (20.00%)
-Job_A -> Wins: 2 (20.00%)
-
-Press [Y]: To Run Again [N]: To Exit
-
-📁 Code Structure
+##📁 Code Structure
 
   -  lottery_scheduler.c – Main C program implementing:
-       Linked list for job tracking
-       Random ticket allocation
-       Lottery selection algorithm
-       Optional sorting of job stats
-       Memory management
+  -    Linked list for job tracking
+  -    Random ticket allocation
+  -    Lottery selection algorithm
+  -    Optional sorting of job stats
+  -    Memory management
 
-🔄 Program Flow
+##🔄 Program Flow
 
    - Prompt user to enter the number of jobs.
-     Assign each job a random number of tickets.
-     Ask if the user wants to:
-         View selection per run
-         Sort stats after the simulation
-    Run the lottery scheduler for a predefined number of times.
-    Show job win statistics and prompt for rerun.
+   - Assign each job a random number of tickets.
+   - Ask if the user wants to:
+       - View selection per run
+       - Sort stats after the simulation
+   - Run the lottery scheduler for a predefined number of times.
+   - Show job win statistics and prompt for rerun.
 
 🧼 Memory Management
 
