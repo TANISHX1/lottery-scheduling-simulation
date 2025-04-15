@@ -43,22 +43,26 @@ gcc -o lottery_scheduler lottery_scheduler.c
 ./lottery_scheduler
 ```
 ## Sample Interaction:
+```
+Enter number of jobs:   2
+Press [1]: To see job selection per schedule  | [0]: To Skip :  1
+Press [1]: To short the Wins Statics | [0]: To Skip :   1
+ Selected Job: Job_B (winning ticket # 12)
+ Selected Job: Job_A (winning ticket # 0)
+ Selected Job: Job_A (winning ticket # 5)
+ Selected Job: Job_B (winning ticket # 13)
+ Selected Job: Job_A (winning ticket # 0)
+ Selected Job: Job_B (winning ticket # 13)
+ Selected Job: Job_A (winning ticket # 6)
+ Selected Job: Job_A (winning ticket # 4)
+ Selected Job: Job_B (winning ticket # 12)
+ Selected Job: Job_A (winning ticket # 8)
 
-- Enter number of jobs: 4
-- Press [1]: To see job selection per schedule  | [0]: To Skip : 1
-- Press [1]: To short the Wins Statics | [0]: To Skip : 1
-- Selected Job: Job_B (winning ticket # 14)
-- Selected Job: Job_A (winning ticket # 6)
-...
-
-- ==Job Wins Statics (out of 10 runs)===
-- Job_C -> Wins: 1 (10.00%)
-- Job_B -> Wins: 5 (50.00%)
-- Job_D -> Wins: 2 (20.00%)
-- Job_A -> Wins: 2 (20.00%)
-
-- Press [Y]: To Run Again [N]: To Exit
-
+==Job Wins Statics(out of 10 runs)===
+Job_B-> Wins: 4 (40.00%)
+Job_A-> Wins: 6 (60.00%)
+Press [Y]:To Run Again [N]: To Exit     N
+```
 ##📁 Code Structure
 
   -  lottery_scheduler.c – Main C program implementing:
