@@ -37,11 +37,12 @@ Use `gcc` to compile the program:
 
 ```bash
 gcc -o lottery_scheduler lottery_scheduler.c
+```
 ▶️ Running the Program
-
+```bash
 ./lottery_scheduler
-
-Sample Interaction:
+```
+## Sample Interaction:
 
 Enter number of jobs: 4
 Press [1]: To see job selection per schedule  | [0]: To Skip : 1
@@ -60,32 +61,21 @@ Press [Y]: To Run Again [N]: To Exit
 
 📁 Code Structure
 
-    lottery_scheduler.c – Main C program implementing:
-
-        Linked list for job tracking
-
-        Random ticket allocation
-
-        Lottery selection algorithm
-
-        Optional sorting of job stats
-
-        Memory management
+  -  lottery_scheduler.c – Main C program implementing:
+       Linked list for job tracking
+       Random ticket allocation
+       Lottery selection algorithm
+       Optional sorting of job stats
+       Memory management
 
 🔄 Program Flow
 
-    Prompt user to enter the number of jobs.
-
-    Assign each job a random number of tickets.
-
-    Ask if the user wants to:
-
-        View selection per run
-
-        Sort stats after the simulation
-
+   - Prompt user to enter the number of jobs.
+     Assign each job a random number of tickets.
+     Ask if the user wants to:
+         View selection per run
+         Sort stats after the simulation
     Run the lottery scheduler for a predefined number of times.
-
     Show job win statistics and prompt for rerun.
 
 🧼 Memory Management
