@@ -134,13 +134,11 @@ int main(){
     node_t *job_list = NULL;
  for( i=0;i<jobs;i++)
     {
-        snprintf(upd,sizeof(upd),"Job_%c",65+i);//it is to create names like Job_A,job_B,Job_c and so on.
+        snprintf(upd,sizeof(upd),"Job_%c",65+i);//to create names like Job_A,job_B,Job_c and so on.
         ticket_value = rand()%(10*jobs);
         append_job(&job_list,upd,ticket_value);
     }
-/*append_job(&job_list,"Job_B",20);
-append_job(&job_list,"Job_C",30);
-append_job(&job_list,"Job_D",40);*/
+
 for(i=0;i<NUM_RUNS;i++)
 {
     lottery_schedule(job_list,flag);
